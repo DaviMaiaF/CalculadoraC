@@ -13,9 +13,9 @@ void menos(){
 
 void soma(){ 
     float valor1, valor2, resultado; 
-    printf("\nDigite o 1 valor: "); 
+    printf("Digite o valor do primeiro numero: \n"); 
     scanf ("%f", &valor1); 
-    printf("Digite o 2 valor: "); 
+    printf("Digite o valor do segundo numero: \n"); 
     scanf ("%f", &valor2); 
     resultado = valor1 + valor2; 
     printf("\nResultado: %.2f\n\n ", resultado); 
@@ -46,7 +46,7 @@ int main(void) {
   printf("Insira uma operacao:\n");
   scanf("%s", entrada);
 
-  if (strcmp(entrada, "soma") == 0) {
+    if (strcmp(entrada, "soma") == 0) {
         soma();
     } else if (strcmp(entrada, "subtracao") == 0) {
         menos();
@@ -56,8 +56,7 @@ int main(void) {
         divide();
     } else {
         printf("Entrada inválida.\n");
-    }
+    
   return 0;
-}
-
-  
+  }
+} 
