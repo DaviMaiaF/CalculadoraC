@@ -8,7 +8,7 @@ void menos(){
   printf("Digite o valor do segundo numero: \n");
   scanf("%f", &valor2);
   resultado = valor1 - valor2;
-  printf("\n Resultado: %.2f\n\nA seguir teremos multiplicacao\n\n", resultado);
+  printf("\n Resultado: %.2f\n\n", resultado);
 }
 
 void soma(){ 
@@ -28,7 +28,7 @@ void multiplicar(){
   printf("Digite o valor do segundo numero: \n");
   scanf("%f", &valor2);
   resultado = valor1 * valor2;
-  printf("\n Resultado: %.2f\n\nA seguir teremos divisao\n\n", resultado); //realizei quebra de linha
+  printf("\n Resultado: %.2f\n\n", resultado); //realizei quebra de linha
 }
 
 void divide(){
