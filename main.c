@@ -43,7 +43,6 @@ void divide(){
 
 int main(void) {
   char entrada[15];
-
   printf("Insira uma operacao:\n");
   scanf("%s", entrada);
 
@@ -58,8 +57,6 @@ int main(void) {
     } else {
         printf("Entrada inválida.\n");
     }
-  
-
   return 0;
 }
 
