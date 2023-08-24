@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
 void menos(){
   float valor1, valor2, resultado;
@@ -9,6 +9,16 @@ void menos(){
   scanf("%f", &valor2);
   resultado = valor1 - valor2;
   printf("\n Resultado: %.2f\n\nA seguir teremos multiplicacao\n\n", resultado);
+}
+
+void soma(){ 
+    float valor1, valor2, resultado; 
+    printf("\nDigite o 1 valor: "); 
+    scanf ("%f", &valor1); 
+    printf("Digite o 2 valor: "); 
+    scanf ("%f", &valor2); 
+    resultado = valor1 + valor2; 
+    printf("\nResultado: %.2f\n\n ", resultado); 
 }
 
 void multiplicar(){
@@ -32,15 +42,24 @@ void divide(){
 }
 
 int main(void) {
-  float valor1, valor2, resultado;
-  printf("Digite o valor do primeiro numero para somar: \n");
-  scanf("%f", &valor1);
-  printf("Digite o valor do segundo numero: \n");
-  scanf("%f", &valor2);
-  resultado = valor1 + valor2;
-  printf("\n Resultado: %.2f\n\nA seguir teremos subtracao\n\n", resultado);
-  menos();
-  multiplicar();
+  char entrada[15];
+
+  printf("Insira uma operacao:\n");
+  scanf("%s", entrada);
+
+  if (strcmp(entrada, "soma") == 0) {
+        soma();
+    } else if (strcmp(entrada, "subtracao") == 0) {
+        menos();
+    }if (strcmp(entrada, "multiplicacao") == 0) {
+        multiplicar();
+    } else if (strcmp(entrada, "divisao") == 0) {
+        divide();
+    } else {
+        printf("Entrada inválida.\n");
+    }
+  
+
   return 0;
 }
 
